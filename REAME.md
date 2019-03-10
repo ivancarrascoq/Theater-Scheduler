@@ -7,7 +7,9 @@ ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
 # Install the gems
 
 gem install date
+
 gem install activesupport
+
 gem install sinatra
 
 # to run the code
