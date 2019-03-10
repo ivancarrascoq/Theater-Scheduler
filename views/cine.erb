@@ -1,0 +1,42 @@
+  <!--h2><%= @name %></h2-->
+    <h3>Weekday</h3>
+    <table class="table table-striped">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Start</th>
+        <th scope="col">End</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% @chart1.each_with_index do |c1, i| %>
+        <tr>
+        <th scope="row"><%= i %></th>
+        <td><%= c1[0] %></td>
+        <td><%= c1[1] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+    </table>
+
+    <h3>Weekend</h3>
+    <table class="table table-striped">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Start</th>
+        <th scope="col">End</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% @chart2.each_with_index do |c1, i| %>
+        <tr>
+        <th scope="row"><%= i %></th>
+        <td><%= c1[0] %></td>
+        <td><%= c1[1] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+    </table>
+
+    <a href="/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Back</a>
